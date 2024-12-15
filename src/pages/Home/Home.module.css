@@ -1,0 +1,22 @@
+.home {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.mainHome {
+  padding: 1rem;
+}
+
+.firstHeading {
+  color: var(--color-blue);
+  font-size: 3em;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.secondHeading {
+  color: var(--color-blue);
+  font-size: 28px;
+  text-align: center;
+}
