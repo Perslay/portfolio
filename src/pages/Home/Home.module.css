@@ -1,22 +1,28 @@
-.home {
-  margin: 0 auto;
-  width: 320px;
-}
-
 .mainHome {
+  margin: 0 auto;
   padding: 1rem;
+  width: 320px;
 }
 
 .firstHeading {
   color: var(--color-blue);
   font-size: 3em;
   letter-spacing: 0.04em;
+  margin-bottom: 1rem;
   text-align: center;
   text-transform: uppercase;
 }
 
-.secondHeading {
+.portrait {
+  margin-bottom: 1rem;
+}
+
+/* .secondHeading {
   color: var(--color-blue);
   font-size: 28px;
   text-align: center;
+} */
+
+.bio {
+  letter-spacing: 0.02em;
 }

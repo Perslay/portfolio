@@ -1,7 +1,26 @@
-.header {
+.headerBackground {
   background-color: var(--color-blue);
+}
+
+.header {
   color: var(--color-white);
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
   padding: 1rem;
+  width: 320px;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  fill: var(--color-white);
+  padding: 0.5rem;
+  transition: background-color 300ms ease;
+}
+
+.menuButton:hover,
+.menuButton:focus {
+  background-color: var(--color-darkblue);
+  outline: none;
 }

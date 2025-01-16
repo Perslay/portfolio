@@ -1,0 +1,22 @@
+.navigation {
+  background-color: var(--color-white);
+  height: 100%;
+  padding: 1rem;
+  position: fixed;
+  transition: transform 300ms ease;
+  width: 100%;
+}
+
+.navOpen {
+  transform: translateX(0);
+}
+
+.navClosed {
+  transform: translateX(-100%);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  padding: 0;
+}
