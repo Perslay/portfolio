@@ -14,6 +14,7 @@ export const Header = ({
           className={css.menuButton}
           aria-expanded={isNavOpen}
           aria-controls="nav-div"
+          aria-labelledby="navigation-menu"
           onClick={toggleNav}
           id="open-dialog"
         >

@@ -1,4 +1,5 @@
 import css from "./Navigation.module.css";
+import { Link } from "react-router-dom";
 
 export const Navigation = ({
   isNavOpen,
@@ -42,10 +43,6 @@ export const Navigation = ({
   const closeButton = document.getElementById("close-dialog");
   const openButton = document.getElementById("open-dialog");
 
-  // console.log(dialog);
-  // console.log(closeButton);
-  // console.log(openButton);
-
   if (openButton) {
     openButton.addEventListener("click", () => {
       if (dialog && closeButton) {
@@ -74,19 +71,30 @@ export const Navigation = ({
       className={`${css.navigation} ${isNavOpen ? css.navOpen : css.navClosed}`}
       id="nav-div"
     >
-      <button
-        id="close-dialog"
-        className={css.closeButton}
-        aria-expanded={isNavOpen}
-        aria-controls="nav-div"
-        onClick={toggleNav}
-      >
-        <svg width="25" height="25">
-          <use href="/portfolio/images/icons.svg#icon-close" />
-        </svg>
-      </button>
-      <h2 id="navDialogTitle">Navigation</h2>
-      <p id="navDialogDesc">Here is your navigation.</p>
+      <div className={css.dialogContent}>
+        <button
+          id="close-dialog"
+          className={css.closeButton}
+          aria-expanded={isNavOpen}
+          aria-controls="nav-div"
+          aria-labelledby="close"
+          onClick={toggleNav}
+        >
+          <svg width="25" height="25">
+            <use href="/portfolio/images/icons.svg#icon-close" />
+          </svg>
+        </button>
+        <h2 id="navDialogTitle">Navigation</h2>
+        <p id="navDialogDesc">Here is your navigation.</p>
+        <ul>
+          <li>
+            <Link to="/">Home page</Link>
+          </li>
+          <li>
+            <Link to="/experience">Experience</Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

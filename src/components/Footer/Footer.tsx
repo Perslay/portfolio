@@ -35,14 +35,26 @@ export const Footer = () => {
           </div>
           <div className={css.imageLinks}>
             <div>
-              <a className={css.imageLink} href="https://github.com/Perslay">
+              <a
+                className={css.imageLink}
+                href="https://github.com/Perslay"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-labelledby="github-profile"
+              >
                 <svg className={css.githubIcon} width="48" height="48">
                   <use href="/portfolio/images/icons.svg#icon-github" />
                 </svg>
               </a>
             </div>
             <div>
-              <a className={`${css.imageLink} ${css.linkedinLink}`} href="">
+              <a
+                className={`${css.imageLink} ${css.linkedinLink}`}
+                href="https://www.linkedin.com/in/natalia-fedyk-057961300/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-labelledby="linkedin-profile"
+              >
                 <svg className={css.linkedinIcon} width="25" height="25">
                   <use href="/portfolio/images/icons.svg#icon-linkedin2" />
                 </svg>
