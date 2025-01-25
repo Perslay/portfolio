@@ -84,17 +84,26 @@
 .educationList {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .educationItem {
+  align-items: center;
+  justify-content: center;
   border-bottom: 1px solid var(--color-blue);
-  padding-bottom: 1rem;
+  height: 178px;
 }
 
 .educationItem:last-child {
   border: none;
-  padding: 0;
+}
+
+.educationItemContent {
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .schoolName {
@@ -104,16 +113,11 @@
 }
 
 .certificateLink {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.2rem;
+  position: relative;
   transition: color 300ms ease;
-}
-
-.underline {
-  background-color: var(--color-blue);
-  bottom: 2px;
-  height: 3px;
-  position: absolute;
-  transition: width 300ms ease;
-  width: 0;
 }
 
 .certificateLink:hover,
@@ -122,8 +126,26 @@
   outline: none;
 }
 
-.certificateLink:hover + .underline,
-.certificateLink:focus + .underline {
+.linkIcon {
+  transition: fill 300ms ease;
+}
+
+.certificateLink:hover .linkIcon,
+.certificateLink:focus .linkIcon {
+  fill: var(--color-blue);
+}
+
+.underline {
+  background-color: var(--color-blue);
+  bottom: 2px;
+  height: 2px;
+  position: absolute;
+  transition: width 300ms ease;
+  width: 0;
+}
+
+.certificateLink:hover .underline,
+.certificateLink:focus .underline {
   width: 100%;
 }
 

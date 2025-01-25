@@ -81,13 +81,13 @@ const Experience = () => {
         <h2 className={css.secondHeading}>Education</h2>
         <ul className={css.educationList}>
           <li className={css.educationItem}>
-            <ul>
+            <ul className={css.educationItemContent}>
               <li className={css.schoolName}>TypeScript Course</li>
               <li className={css.schoolDate}>2024</li>
             </ul>
           </li>
           <li className={css.educationItem}>
-            <ul>
+            <ul className={css.educationItemContent}>
               <li className={css.schoolName}>
                 <a
                   className={css.certificateLink}
@@ -96,15 +96,18 @@ const Experience = () => {
                   rel="noopener noreferrer"
                 >
                   IT School GoIT
+                  <svg className={css.linkIcon} height="15" width="15">
+                    <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                  </svg>
+                  <span className={css.underline}></span>
                 </a>
-                <div className={css.underline}></div>
               </li>
               <li>FullStack Developer</li>
               <li className={css.schoolDate}>2023-2024</li>
             </ul>
           </li>
           <li className={css.educationItem}>
-            <ul>
+            <ul className={css.educationItemContent}>
               <li className={css.schoolName}>
                 <a
                   className={css.certificateLink}
@@ -113,15 +116,18 @@ const Experience = () => {
                   rel="noopener noreferrer"
                 >
                   Concept Art Course
+                  <svg className={css.linkIcon} height="15" width="15">
+                    <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                  </svg>
+                  <span className={css.underline}></span>
                 </a>
-                <div className={css.underline}></div>
               </li>
               <li>Drawing and character design</li>
               <li className={css.schoolDate}>2022</li>
             </ul>
           </li>
           <li className={css.educationItem}>
-            <ul>
+            <ul className={css.educationItemContent}>
               <li className={css.schoolName}>NOVA School</li>
               <li>IT Technician</li>
               <li className={css.schoolDate}>2018-2020</li>
