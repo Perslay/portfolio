@@ -10,18 +10,19 @@ const Projects = () => {
         to work in a team.
       </p>
       <ul className={css.projectsList}>
-        <li className={css.projectItem}>
-          <h3 className={css.thirdHeading}>
-            <a
-              className={css.projectLink}
-              href="https://perslay.github.io/team-project/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Simply Chocolate
-            </a>
-          </h3>
-          <div className={css.underline}></div>
+        <li>
+          <a
+            className={css.projectLink}
+            href="https://perslay.github.io/team-project/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className={css.thirdHeading}>Simply Chocolate</h3>
+            <svg className={css.linkIcon} height="20" width="20">
+              <use href="/portfolio/images/icons.svg#icon-new-tab" />
+            </svg>
+            <span className={css.underline}></span>
+          </a>
           <ul className={css.projectDetails}>
             <li className={css.projectTools}>HTML, CSS</li>
             <li>Role: Team Lead</li>
@@ -33,24 +34,28 @@ const Projects = () => {
                   href="https://github.com/Perslay/team-project"
                 >
                   Frontend source code
+                  <svg className={css.linkIcon} height="15" width="15">
+                    <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                  </svg>
+                  <span className={css.smallUnderline}></span>
                 </a>
-                <div className={css.smallUnderline}></div>
               </div>
             </li>
           </ul>
         </li>
-        <li className={css.projectItem}>
-          <h3 className={css.thirdHeading}>
-            <a
-              className={css.projectLink}
-              href="https://enchyb.github.io/Filmoteka-JS-team-project/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Filmoteka
-            </a>
-          </h3>
-          <div className={css.underline}></div>
+        <li>
+          <a
+            className={css.projectLink}
+            href="https://enchyb.github.io/Filmoteka-JS-team-project/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className={css.thirdHeading}>Filmoteka</h3>
+            <svg className={css.linkIcon} height="20" width="20">
+              <use href="/portfolio/images/icons.svg#icon-new-tab" />
+            </svg>
+            <span className={css.underline}></span>
+          </a>
           <ul className={css.projectDetails}>
             <li className={css.projectTools}>HTML, CSS, JavaScript</li>
             <li>Role: Developer</li>
@@ -62,24 +67,28 @@ const Projects = () => {
                   href="https://github.com/EnChyb/Filmoteka-JS-team-project"
                 >
                   Frontend source code
+                  <svg className={css.linkIcon} height="15" width="15">
+                    <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                  </svg>
+                  <span className={css.smallUnderline}></span>
                 </a>
-                <div className={css.smallUnderline}></div>
               </div>
             </li>
           </ul>
         </li>
-        <li className={css.projectItem}>
-          <h3 className={css.thirdHeading}>
-            <a
-              className={css.projectLink}
-              href="https://kapustaapp.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Kapusta
-            </a>
-          </h3>
-          <div className={css.underline}></div>
+        <li>
+          <a
+            className={css.projectLink}
+            href="https://kapustaapp.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className={css.thirdHeading}>Kapusta</h3>
+            <svg className={css.linkIcon} height="20" width="20">
+              <use href="/portfolio/images/icons.svg#icon-new-tab" />
+            </svg>
+            <span className={css.underline}></span>
+          </a>
           <ul className={css.projectDetails}>
             <li className={css.projectTools}>
               HTML, CSS, Javascript, React, Redux, NodeJS, REST API
@@ -93,8 +102,11 @@ const Projects = () => {
                   href="https://github.com/zetdou/goIT-group-project-react-node-gr4-front"
                 >
                   Frontend source code
+                  <svg className={css.linkIcon} height="15" width="15">
+                    <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                  </svg>
+                  <span className={css.smallUnderline}></span>
                 </a>
-                <div className={css.smallUnderline}></div>
               </div>
             </li>
             <li>
@@ -104,8 +116,11 @@ const Projects = () => {
                   href="https://github.com/PiotrKarys/Kapusta"
                 >
                   Backend source code
+                  <svg className={css.linkIcon} height="15" width="15">
+                    <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                  </svg>
+                  <span className={css.smallUnderline}></span>
                 </a>
-                <div className={css.smallUnderline}></div>
               </div>
             </li>
           </ul>
@@ -115,15 +130,20 @@ const Projects = () => {
       <ul className={css.sourceCodeList}>
         <li>
           <div className={css.sourceContainer}>
+            See the source code of this website
             <a
-              className={css.projectSource}
+              className={css.websiteSource}
               href="https://github.com/Perslay/portfolio"
               target="_blank"
               rel="noopener noreferrer"
             >
-              See the source code of this website here.
+              here
+              <svg className={css.linkIcon} height="15" width="15">
+                <use href="/portfolio/images/icons.svg#icon-new-tab" />
+              </svg>
+              <span className={css.smallUnderline}></span>
             </a>
-            <div className={css.smallUnderline}></div>
+            .
           </div>
         </li>
         <li>To see the rest of the projects, visit my Github profile.</li>

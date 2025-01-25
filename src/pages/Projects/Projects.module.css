@@ -31,20 +31,12 @@
   margin-bottom: 2rem;
 }
 
-.projectItem {
-  position: relative;
-}
-
-.thirdHeading {
-  margin-bottom: 1rem;
-}
-
-.thirdHeading:hover + .underline,
-.thirdHeading:focus + .underline {
-  width: 100%;
-}
-
 .projectLink {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
   transition: color 300ms ease;
 }
 
@@ -54,13 +46,32 @@
   outline: none;
 }
 
+.thirdHeading {
+  display: inline;
+}
+
+.linkIcon {
+  transition: fill 300ms ease;
+}
+
+.projectLink:hover .linkIcon,
+.projectLink:focus .linkIcon {
+  fill: var(--color-blue);
+}
+
 .underline {
   background-color: var(--color-blue);
   height: 3px;
+  left: 0;
   position: absolute;
   width: 0;
-  top: 1.5rem;
+  bottom: -2px;
   transition: width 300ms ease;
+}
+
+.projectLink:hover .underline,
+.projectLink:focus .underline {
+  width: 100%;
 }
 
 .projectDetails {
@@ -88,22 +99,62 @@
   position: relative;
 }
 
-.projectSource:focus {
+.projectSource {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.2rem;
   outline: none;
+  transition: color 300ms ease;
 }
 
-.projectSource:hover + .smallUnderline,
-.projectSource:focus + .smallUnderline {
+.projectSource:hover,
+.projectSource:focus {
+  color: var(--color-blue);
+}
+
+.projectSource:hover .linkIcon,
+.projectSource:focus .linkIcon {
+  fill: var(--color-blue);
+}
+
+.projectSource:hover .smallUnderline,
+.projectSource:focus .smallUnderline {
   width: 100%;
 }
 
 .smallUnderline {
-  background-color: var(--color-gray);
-  bottom: 3px;
+  background-color: var(--color-blue);
+  bottom: 2px;
   height: 2px;
   position: absolute;
   transition: width 300ms ease;
   width: 0;
+}
+
+.websiteSource {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.2rem;
+  margin-left: 0.5rem;
+  letter-spacing: 0.15em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.websiteSource:hover,
+.websiteSource:focus {
+  color: var(--color-blue);
+  outline: none;
+}
+
+.websiteSource:hover .linkIcon,
+.websiteSource:focus .linkIcon {
+  fill: var(--color-blue);
+}
+
+.websiteSource:hover .smallUnderline,
+.websiteSource:focus .smallUnderline {
+  width: 100%;
 }
 
 .sourceCodeList {
