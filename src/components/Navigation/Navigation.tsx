@@ -84,17 +84,25 @@ export const Navigation = ({
             <use href="/portfolio/images/icons.svg#icon-close" />
           </svg>
         </button>
-        <h2 id="navDialogTitle">Navigation</h2>
-        <p id="navDialogDesc">Here is your navigation.</p>
+        <h2 className={css.secondHeading} id="navDialogTitle">
+          Navigation
+        </h2>
+        <p id="navDialogDesc">Choose the page you would like to visit.</p>
         <ul>
-          <li>
-            <Link to="/">Home page</Link>
+          <li className={css.navItem}>
+            <Link to="/" className={css.navLink}>
+              Home
+            </Link>
           </li>
-          <li>
-            <Link to="/experience">Experience</Link>
+          <li className={css.navItem}>
+            <Link to="/experience" className={css.navLink}>
+              Experience
+            </Link>
           </li>
-          <li>
-            <Link to="/projects">Projects</Link>
+          <li className={css.navItem}>
+            <Link to="/projects" className={css.navLink}>
+              Projects
+            </Link>
           </li>
         </ul>
       </div>

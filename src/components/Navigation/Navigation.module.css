@@ -16,6 +16,9 @@
 }
 
 .dialogContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   margin: 0 auto;
   padding: 1rem;
   width: 320px;
@@ -25,4 +28,37 @@
   background: none;
   border: none;
   padding: 0;
+  transition: filter 300ms ease, transform 300ms ease;
+  width: 25px;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  filter: drop-shadow(0 0 1px var(--color-black));
+  transform: scale(1.2) rotate(-90deg);
+  outline: none;
+}
+
+.secondHeading {
+  text-align: center;
+}
+
+.navItem {
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.navItem:last-child {
+  border: none;
+}
+
+.navLink {
+  display: block;
+  padding: 1rem;
+  transition: background-color 300ms ease;
+}
+
+.navLink:hover,
+.navLink:focus {
+  background-color: var(--color-lightgray);
+  outline: none;
 }
