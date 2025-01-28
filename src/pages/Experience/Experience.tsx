@@ -1,5 +1,4 @@
 import css from "./Experience.module.css";
-// import goitCertificate from "./portfolio/certificate.pdf";
 
 const Experience = () => {
   return (
