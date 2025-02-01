@@ -90,17 +90,17 @@ export const Navigation = ({
         <p id="navDialogDesc">Choose the page you would like to visit.</p>
         <ul>
           <li className={css.navItem}>
-            <Link to="/" className={css.navLink}>
+            <Link to="/" className={css.navLink} onClick={toggleNav}>
               Home
             </Link>
           </li>
           <li className={css.navItem}>
-            <Link to="/experience" className={css.navLink}>
-              Experience
+            <Link to="/about" className={css.navLink} onClick={toggleNav}>
+              About
             </Link>
           </li>
           <li className={css.navItem}>
-            <Link to="/projects" className={css.navLink}>
+            <Link to="/projects" className={css.navLink} onClick={toggleNav}>
               Projects
             </Link>
           </li>
