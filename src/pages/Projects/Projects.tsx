@@ -32,6 +32,8 @@ const Projects = () => {
                 <a
                   className={css.projectSource}
                   href="https://github.com/Perslay/team-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Frontend source code
                   <svg className={css.linkIcon} height="15" width="15">
@@ -65,6 +67,8 @@ const Projects = () => {
                 <a
                   className={css.projectSource}
                   href="https://github.com/EnChyb/Filmoteka-JS-team-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Frontend source code
                   <svg className={css.linkIcon} height="15" width="15">
@@ -100,6 +104,8 @@ const Projects = () => {
                 <a
                   className={css.projectSource}
                   href="https://github.com/zetdou/goIT-group-project-react-node-gr4-front"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Frontend source code
                   <svg className={css.linkIcon} height="15" width="15">
@@ -114,6 +120,8 @@ const Projects = () => {
                 <a
                   className={css.projectSource}
                   href="https://github.com/PiotrKarys/Kapusta"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Backend source code
                   <svg className={css.linkIcon} height="15" width="15">

@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 3rem;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 1rem;
   width: 320px;
 }
 
@@ -149,4 +149,58 @@
 .schoolDate {
   color: var(--color-gray);
   font-size: 14px;
+}
+
+.interestsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.interestsItem {
+  height: 177px;
+  position: relative;
+}
+
+.interestsItem:first-child {
+  background-image: url("/portfolio/images/bird.jpg");
+  background-size: cover;
+}
+
+.interestsItem:nth-child(2) {
+  background-image: url("/portfolio/images/drawing.jpg");
+  background-size: cover;
+}
+
+.interestsItem:last-child {
+  background-image: url("/portfolio/images/gaming.jpg");
+  background-size: cover;
+}
+
+@media only screen and (min-resolution: 2dppx) {
+  .interestsItem:first-child {
+    background-image: url("/portfolio/images/bird@2x.jpg");
+  }
+
+  .interestsItem:nth-child(2) {
+    background-image: url("/portfolio/images/drawing@2x.jpg");
+  }
+
+  .interestsItem:last-child {
+    background-image: url("/portfolio/images/gaming@2x.jpg");
+  }
+}
+
+.bgLight {
+  background-color: var(--color-light);
+  height: 100%;
+}
+
+.interestName {
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

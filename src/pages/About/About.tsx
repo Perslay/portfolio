@@ -140,20 +140,16 @@ const About = () => {
         <h2 className={css.secondHeading}>Interests</h2>
         <ul className={css.interestsList}>
           <li className={css.interestsItem}>
-            <img src="" alt="" />
-            <span>span</span>
+            <div className={css.bgLight}></div>
+            <span className={css.interestName}>Ornithology</span>
           </li>
           <li className={css.interestsItem}>
-            <img src="" alt="" />
-            <span>span</span>
+            <div className={css.bgLight}></div>
+            <span className={css.interestName}>Drawing</span>
           </li>
           <li className={css.interestsItem}>
-            <img src="" alt="" />
-            <span>span</span>
-          </li>
-          <li className={css.interestsItem}>
-            <img src="" alt="" />
-            <span>span</span>
+            <div className={css.bgLight}></div>
+            <span className={css.interestName}>Video games</span>
           </li>
         </ul>
       </section>
