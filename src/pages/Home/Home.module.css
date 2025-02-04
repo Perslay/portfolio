@@ -1,28 +1,43 @@
-.mainHome {
+.home {
   margin: 0 auto;
   padding: 1rem;
   width: 320px;
 }
 
-.firstHeading {
+.heading {
   color: var(--color-blue);
-  font-size: 3em;
-  letter-spacing: 0.04em;
   margin-bottom: 1rem;
+}
+
+.firstHeading {
+  composes: heading;
+  font-size: 3em;
+  letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
 }
 
 .portrait {
   margin-bottom: 1rem;
 }
 
-/* .secondHeading {
-  color: var(--color-blue);
+.secondHeading {
+  composes: heading;
   font-size: 28px;
+  letter-spacing: 0.04em;
   text-align: center;
-} */
+}
 
-.bio {
+.thirdHeading {
+  composes: heading;
+  font-size: 20px;
   letter-spacing: 0.02em;
 }

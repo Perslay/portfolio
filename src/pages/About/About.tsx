@@ -1,20 +1,38 @@
 import css from "./About.module.css";
+import { useState } from "react";
 
 const About = () => {
+  const [isFirstBoxFocused, setIsFirstBoxFocused] = useState(false);
+  const [isSecondBoxFocused, setIsSecondBoxFocused] = useState(false);
+  const [isThirdBoxFocused, setIsThirdBoxFocused] = useState(false);
+  const [isFourthBoxFocused, setIsFourthBoxFocused] = useState(false);
+
   return (
     <div className={css.about}>
       <h1 className={css.firstHeading}>About me</h1>
-      <section>
+      <section className={css.section}>
         <h2 className={css.secondHeading}>Skills</h2>
         <ul className={css.skillsList}>
           <li
             className={css.skillsBox}
+            onFocus={() => setIsFirstBoxFocused(true)}
+            onBlur={() => setIsFirstBoxFocused(false)}
+            onMouseOver={() => setIsFirstBoxFocused(true)}
+            onMouseLeave={() => setIsFirstBoxFocused(false)}
             tabIndex={0}
             aria-label="Programming skills. Press Tab to see details."
           >
-            <h3 className={css.thirdHeading}>Programming</h3>
+            <h3
+              className={`${css.thirdHeading} ${
+                isFirstBoxFocused ? css.visuallyHidden : ""
+              }`}
+            >
+              Programming
+            </h3>
             <ul
-              className={`${css.boxList} ${css.flexBox} visuallyHidden`}
+              className={`${css.boxList} ${css.flexBox} ${
+                isFirstBoxFocused ? "" : css.visuallyHidden
+              }`}
               aria-hidden="true"
             >
               <li className={css.boxColumn}>
@@ -39,10 +57,24 @@ const About = () => {
           <li
             className={css.skillsBox}
             tabIndex={0}
+            onFocus={() => setIsSecondBoxFocused(true)}
+            onBlur={() => setIsSecondBoxFocused(false)}
+            onMouseOver={() => setIsSecondBoxFocused(true)}
+            onMouseLeave={() => setIsSecondBoxFocused(false)}
             aria-label="Soft skills. Press Tab to see details."
           >
-            <h3 className={css.thirdHeading}>Soft Skills</h3>
-            <ul className={`${css.boxList} visuallyHidden`}>
+            <h3
+              className={`${css.thirdHeading} ${
+                isSecondBoxFocused ? css.visuallyHidden : ""
+              }`}
+            >
+              Soft Skills
+            </h3>
+            <ul
+              className={`${css.boxList} ${
+                isSecondBoxFocused ? "" : css.visuallyHidden
+              }`}
+            >
               <li>Teamwork</li>
               <li>Attention to details</li>
               <li>Problem solving</li>
@@ -54,10 +86,24 @@ const About = () => {
           <li
             className={css.skillsBox}
             tabIndex={0}
+            onFocus={() => setIsThirdBoxFocused(true)}
+            onBlur={() => setIsThirdBoxFocused(false)}
+            onMouseOver={() => setIsThirdBoxFocused(true)}
+            onMouseLeave={() => setIsThirdBoxFocused(false)}
             aria-label="Artistic skills. Press Tab to see details."
           >
-            <h3 className={css.thirdHeading}>Art</h3>
-            <ul className={`${css.boxList} visuallyHidden`}>
+            <h3
+              className={`${css.thirdHeading} ${
+                isThirdBoxFocused ? css.visuallyHidden : ""
+              }`}
+            >
+              Art
+            </h3>
+            <ul
+              className={`${css.boxList} ${
+                isThirdBoxFocused ? "" : css.visuallyHidden
+              }`}
+            >
               <li>Digital drawing</li>
               <li>Sketching</li>
               <li>Character design</li>
@@ -67,10 +113,24 @@ const About = () => {
           <li
             className={css.skillsBox}
             tabIndex={0}
+            onFocus={() => setIsFourthBoxFocused(true)}
+            onBlur={() => setIsFourthBoxFocused(false)}
+            onMouseOver={() => setIsFourthBoxFocused(true)}
+            onMouseLeave={() => setIsFourthBoxFocused(false)}
             aria-label="Spoken languages. Press Tab to see details."
           >
-            <h3 className={css.thirdHeading}>Languages</h3>
-            <ul className={`${css.boxList} visuallyHidden`}>
+            <h3
+              className={`${css.thirdHeading} ${
+                isFourthBoxFocused ? css.visuallyHidden : ""
+              }`}
+            >
+              Languages
+            </h3>
+            <ul
+              className={`${css.boxList} ${
+                isFourthBoxFocused ? "" : css.visuallyHidden
+              }`}
+            >
               <li>Polish - Native</li>
               <li>English - C1</li>
               <li>German - A2</li>
@@ -78,7 +138,7 @@ const About = () => {
           </li>
         </ul>
       </section>
-      <section>
+      <section className={css.section}>
         <h2 className={css.secondHeading}>Education</h2>
         <ul className={css.educationList}>
           <li className={css.educationItem}>
@@ -129,27 +189,50 @@ const About = () => {
           </li>
           <li className={css.educationItem}>
             <ul className={css.educationItemContent}>
-              <li className={css.schoolName}>NOVA School</li>
+              <li className={css.schoolName}>NOVA Education Center</li>
               <li>IT Technician</li>
               <li className={css.schoolDate}>2018-2020</li>
             </ul>
           </li>
         </ul>
       </section>
-      <section>
+      <section className={css.section}>
         <h2 className={css.secondHeading}>Interests</h2>
         <ul className={css.interestsList}>
           <li className={css.interestsItem}>
             <div className={css.bgLight}></div>
-            <span className={css.interestName}>Ornithology</span>
+            <div className={css.interestBox}>
+              <h3 className={css.thirdHeading}>Ornithology</h3>
+              <p className={css.interestText}>
+                The avian creatures come with different shapes, colors and
+                sounds. They inspire humans with their beauty and ability to
+                fly.
+              </p>
+            </div>
           </li>
           <li className={css.interestsItem}>
             <div className={css.bgLight}></div>
-            <span className={css.interestName}>Drawing</span>
+            <div className={css.interestBox}>
+              <h3 className={css.thirdHeading}>Drawing</h3>
+              <p className={css.interestText}>
+                Art helps humans express themselves and process emotions.
+              </p>
+              <p className={css.interestText}>
+                I chose drawing because I mainly think with images and it feels
+                most natural to me.
+              </p>
+            </div>
           </li>
           <li className={css.interestsItem}>
             <div className={css.bgLight}></div>
-            <span className={css.interestName}>Video games</span>
+            <div className={css.interestBox}>
+              <h3 className={css.thirdHeading}>Video games</h3>
+              <p className={css.interestText}>
+                Games are a wonderful way to have fun. Combined with the
+                artificial environment, they can provide unique and immersive
+                experience.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
