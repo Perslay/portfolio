@@ -40,9 +40,9 @@ export const Footer = () => {
                 href="https://github.com/Perslay"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-labelledby="github-profile"
+                aria-label="Link to Natalia's Github profile"
               >
-                <svg className={css.githubIcon} width="48" height="48">
+                <svg className={css.githubIcon} width="58" height="58">
                   <use href="/portfolio/images/icons.svg#icon-github" />
                 </svg>
               </a>
@@ -53,9 +53,9 @@ export const Footer = () => {
                 href="https://www.linkedin.com/in/natalia-fedyk-057961300/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-labelledby="linkedin-profile"
+                aria-label="Link to Natalia's Linkedin profile"
               >
-                <svg className={css.linkedinIcon} width="25" height="25">
+                <svg className={css.linkedinIcon} width="45" height="45">
                   <use href="/portfolio/images/icons.svg#icon-linkedin2" />
                 </svg>
               </a>

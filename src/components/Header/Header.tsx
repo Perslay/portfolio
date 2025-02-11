@@ -14,11 +14,11 @@ export const Header = ({
           className={css.menuButton}
           aria-expanded={isNavOpen}
           aria-controls="nav-div"
-          aria-labelledby="navigation-menu"
+          aria-label="Open navigation"
           onClick={toggleNav}
           id="open-dialog"
         >
-          <svg width="25" height="25">
+          <svg width="50" height="50">
             <use href="/portfolio/images/icons.svg#icon-menu" />
           </svg>
         </button>

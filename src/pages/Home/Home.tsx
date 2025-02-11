@@ -23,6 +23,18 @@ const Home = () => {
           Are you an employer looking for a Frontend or Fullstack Developer? You
           can click the button below to see my CV.
         </p>
+        <div className={css.cvLinks}>
+          <a className={css.cvLink} href="./portfolio/natalia_fedyk_cv.pdf">
+            See
+          </a>
+          <a
+            className={css.cvLink}
+            href="./portfolio/natalia_fedyk_cv.pdf"
+            download
+          >
+            Download
+          </a>
+        </div>
       </section>
     </div>
   );

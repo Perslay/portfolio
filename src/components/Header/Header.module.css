@@ -11,16 +11,32 @@
 }
 
 .menuButton {
+  align-items: center;
   background: none;
   border: none;
   border-radius: 0.5rem;
+  display: flex;
   fill: var(--color-white);
+  height: 45px;
   padding: 0.5rem;
   transition: background-color 300ms ease;
+  width: 45px;
 }
 
 .menuButton:hover,
 .menuButton:focus {
   background-color: var(--color-darkblue);
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 1.5rem;
+    width: 768px;
+  }
+
+  .menuButton {
+    height: 55px;
+    width: 55px;
+  }
 }

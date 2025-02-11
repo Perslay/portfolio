@@ -80,11 +80,11 @@ export const Navigation = ({
           aria-labelledby="close"
           onClick={toggleNav}
         >
-          <svg width="25" height="25">
+          <svg className={css.closeIcon} width="30" height="30">
             <use href="/portfolio/images/icons.svg#icon-close" />
           </svg>
         </button>
-        <h2 className={css.secondHeading} id="navDialogTitle">
+        <h2 className={css.heading} id="navDialogTitle">
           Navigation
         </h2>
         <p id="navDialogDesc">Choose the page you would like to visit.</p>

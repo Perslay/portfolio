@@ -27,19 +27,27 @@
 .closeButton {
   background: none;
   border: none;
+  height: 25px;
   padding: 0;
   transition: filter 300ms ease, transform 300ms ease;
   width: 25px;
 }
 
+.closeIcon {
+  height: inherit;
+  width: inherit;
+}
+
 .closeButton:hover,
 .closeButton:focus {
   filter: drop-shadow(0 0 1px var(--color-black));
-  transform: scale(1.2) rotate(-90deg);
+  transform: scale(1.2) rotate(90deg);
   outline: none;
 }
 
-.secondHeading {
+.heading {
+  font-size: 28px;
+  letter-spacing: 0.04em;
   text-align: center;
 }
 
@@ -61,4 +69,25 @@
 .navLink:focus {
   background-color: var(--color-lightgray);
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .dialogContent {
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 768px;
+  }
+
+  .closeButton {
+    height: 30px;
+    width: 30px;
+  }
+
+  .heading {
+    font-size: 2em;
+  }
+
+  .navLink {
+    padding: 1.5rem;
+  }
 }
