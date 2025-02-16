@@ -21,10 +21,15 @@ const Home = () => {
         <h3 className={css.thirdHeading}>Curriculum Vitae</h3>
         <p>
           Are you an employer looking for a Frontend or Fullstack Developer? You
-          can click the button below to see my CV.
+          can click one of the buttons below to see or download my CV.
         </p>
         <div className={css.cvLinks}>
-          <a className={css.cvLink} href="./portfolio/natalia_fedyk_cv.pdf">
+          <a
+            className={css.cvLink}
+            href="./portfolio/natalia_fedyk_cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             See
           </a>
           <a

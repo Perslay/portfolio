@@ -1,4 +1,4 @@
-.mainProjects {
+.projects {
   margin: 0 auto;
   padding: 1rem;
   width: 320px;
@@ -42,13 +42,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 2rem;
 }
 
 .projectLink {
   align-items: center;
   display: inline-flex;
-  gap: 0.5rem;
+  gap: 0.5em;
   margin-bottom: 1rem;
   position: relative;
   transition: color 300ms ease;
@@ -118,7 +117,7 @@
 .projectSource {
   align-items: center;
   display: inline-flex;
-  gap: 0.2rem;
+  gap: 0.5em;
   outline: none;
   transition: color 300ms ease;
 }
@@ -150,7 +149,7 @@
 .websiteSource {
   align-items: center;
   display: inline-flex;
-  gap: 0.2rem;
+  gap: 0.5em;
   margin-left: 0.5rem;
   letter-spacing: 0.15em;
   position: relative;
@@ -196,7 +195,7 @@
   background: var(--color-white);
   background: linear-gradient(
     90deg,
-    var(--color-white) 50%,
+    var(--color-white) 60%,
     var(--color-transparent) 100%
   );
   height: 100%;
@@ -210,4 +209,94 @@
   font-size: 14px;
   padding: 0.5rem 0.5rem 0.5rem 0;
   width: 75%;
+}
+
+.emphasis {
+  color: #d4b500;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    padding: 1.5rem;
+    width: 768px;
+  }
+
+  .heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .firstHeading {
+    font-size: 3.5em;
+  }
+
+  .section {
+    margin-bottom: 3.5rem;
+  }
+
+  .secondHeading {
+    font-size: 2em;
+  }
+
+  .groupProjectsText {
+    font-size: 16px;
+    margin-bottom: 2.5rem;
+  }
+
+  .projectsList {
+    gap: 2.5rem;
+  }
+
+  .projectLink {
+    margin-bottom: 1.5rem;
+  }
+
+  .projectLink:hover,
+  .projectLink:focus {
+    color: var(--color-blue);
+    outline: none;
+  }
+
+  .thirdHeading {
+    font-size: 1.5em;
+  }
+
+  .projectDetails {
+    gap: 1rem;
+  }
+
+  /* .sourceCodeList {
+    gap: 1rem;
+  } */
+
+  .funFactImg {
+    background-image: url("/portfolio/images/snail.jpg");
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    transform: translateX(368px);
+    width: 352px;
+    z-index: -1;
+  }
+
+  .funFactBg {
+    background: var(--color-white);
+    background: linear-gradient(
+      90deg,
+      var(--color-white) 0,
+      var(--color-transparent) 50%
+    );
+    height: 100%;
+    position: absolute;
+    transform: translateX(368px);
+    width: 352px;
+    z-index: -1;
+  }
+
+  .funFact {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0;
+    width: 352px;
+  }
 }

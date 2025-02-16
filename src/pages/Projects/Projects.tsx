@@ -2,7 +2,7 @@ import css from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <div className={css.mainProjects}>
+    <div className={css.projects}>
       <h1 className={css.firstHeading}>Projects</h1>
       <section className={css.section}>
         <h2 className={css.secondHeading}>Group Projects</h2>
@@ -163,9 +163,10 @@ const Projects = () => {
             <div className={css.funFactBg}></div>
             <p className={css.funFact}>
               Did you know that this website is created using the{" "}
-              <em>golden ratio</em>? It is very common in nature, even in human
-              proportions. The golden ratio is aesthetically pleasing and can be
-              found in many famous works of art.
+              <em className={css.emphasis}>golden ratio</em>? It is very common
+              in nature, even in human proportions. The golden ratio is
+              aesthetically pleasing and can be found in many famous works of
+              art.
             </p>
           </li>
         </ul>

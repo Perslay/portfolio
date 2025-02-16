@@ -77,7 +77,7 @@ export const Navigation = ({
           className={css.closeButton}
           aria-expanded={isNavOpen}
           aria-controls="nav-div"
-          aria-labelledby="close"
+          aria-label="Close navigation."
           onClick={toggleNav}
         >
           <svg className={css.closeIcon} width="30" height="30">

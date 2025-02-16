@@ -163,7 +163,7 @@ const About = () => {
                   <span className={css.underline}></span>
                 </a>
               </li>
-              <li>FullStack Developer</li>
+              <li className={css.schoolInfo}>FullStack Developer</li>
               <li className={css.schoolDate}>2023-2024</li>
             </ul>
           </li>
@@ -183,14 +183,14 @@ const About = () => {
                   <span className={css.underline}></span>
                 </a>
               </li>
-              <li>Drawing and character design</li>
+              <li className={css.schoolInfo}>Drawing and character design</li>
               <li className={css.schoolDate}>2022</li>
             </ul>
           </li>
           <li className={css.educationItem}>
             <ul className={css.educationItemContent}>
               <li className={css.schoolName}>NOVA Education Center</li>
-              <li>IT Technician</li>
+              <li className={css.schoolInfo}>IT Technician</li>
               <li className={css.schoolDate}>2018-2020</li>
             </ul>
           </li>
