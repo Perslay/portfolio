@@ -11,16 +11,12 @@
 }
 
 .menuButton {
-  align-items: center;
   background: none;
   border: none;
   border-radius: 0.5rem;
-  display: flex;
   fill: var(--color-white);
-  height: 45px;
-  padding: 0.5rem;
   transition: background-color 300ms ease;
-  width: 45px;
+  padding: 0.5rem;
 }
 
 .menuButton:hover,
@@ -29,14 +25,33 @@
   outline: none;
 }
 
+.menuIcon {
+  height: 100%;
+  width: 35px;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 1.5rem;
     width: 768px;
   }
 
+  .menuIcon {
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 2rem;
+    width: 1280px;
+  }
+
   .menuButton {
-    height: 55px;
-    width: 55px;
+    padding: 0.8rem;
+  }
+
+  .menuIcon {
+    width: 45px;
   }
 }

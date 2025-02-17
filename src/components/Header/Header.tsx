@@ -18,7 +18,7 @@ export const Header = ({
           onClick={toggleNav}
           id="open-dialog"
         >
-          <svg width="50" height="50">
+          <svg className={css.menuIcon} width="40" height="40">
             <use href="/portfolio/images/icons.svg#icon-menu" />
           </svg>
         </button>
