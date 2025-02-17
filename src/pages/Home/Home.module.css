@@ -111,3 +111,50 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .home {
+    padding: 2rem;
+    width: 1280px;
+  }
+
+  .heading {
+    margin-bottom: 2rem;
+  }
+
+  .firstHeading {
+    font-size: 4em;
+  }
+
+  .section {
+    margin-bottom: 4rem;
+  }
+
+  .portrait {
+    margin-bottom: 2rem;
+  }
+
+  .secondHeading {
+    font-size: 2.5em;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+
+  .thirdHeading {
+    font-size: 2em;
+  }
+
+  .cvLinks {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .cvLink {
+    border-radius: 0.5rem;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    padding: 1rem 1.5rem;
+  }
+}

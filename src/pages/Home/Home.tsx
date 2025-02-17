@@ -12,14 +12,14 @@ const Home = () => {
           alt="Young woman with fair skin and long mousy hair."
         />
         <h2 className={css.secondHeading}>Web Development Aspirant</h2>
-        <p>
+        <p className={css.paragraph}>
           My name is Natalia Fedyk and I create websites. Becoming a web
           developer is my dream.
         </p>
       </section>
       <section className={css.section}>
         <h3 className={css.thirdHeading}>Curriculum Vitae</h3>
-        <p>
+        <p className={css.paragraph}>
           Are you an employer looking for a Frontend or Fullstack Developer? You
           can click one of the buttons below to see or download my CV.
         </p>
