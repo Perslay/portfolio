@@ -8,7 +8,7 @@ const About = () => {
   const [isFourthBoxFocused, setIsFourthBoxFocused] = useState(false);
 
   return (
-    <div className={css.about}>
+    <main className={css.about}>
       <h1 className={css.firstHeading}>About me</h1>
       <section className={css.section}>
         <h2 className={css.secondHeading}>Skills</h2>
@@ -236,7 +236,7 @@ const About = () => {
           </li>
         </ul>
       </section>
-    </div>
+    </main>
   );
 };
 

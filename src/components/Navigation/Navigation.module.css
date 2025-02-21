@@ -70,24 +70,3 @@
   background-color: var(--color-lightgray);
   outline: none;
 }
-
-@media screen and (min-width: 768px) {
-  .dialogContent {
-    gap: 1.5rem;
-    padding: 1.5rem;
-    width: 768px;
-  }
-
-  .closeButton {
-    height: 30px;
-    width: 30px;
-  }
-
-  .heading {
-    font-size: 2em;
-  }
-
-  .navLink {
-    padding: 1.5rem;
-  }
-}

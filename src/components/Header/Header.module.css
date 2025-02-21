@@ -6,17 +6,15 @@
   color: var(--color-white);
   display: flex;
   margin: 0 auto;
-  padding: 1rem;
   width: 320px;
 }
 
 .menuButton {
   background: none;
   border: none;
-  border-radius: 0.5rem;
   fill: var(--color-white);
   transition: background-color 300ms ease;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .menuButton:hover,
@@ -32,26 +30,37 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 1.5rem;
+    padding: 0rem;
     width: 768px;
   }
 
-  .menuIcon {
-    width: 40px;
+  .navList {
+    display: flex;
+  }
+
+  .navLink {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1.5rem;
+    transition: background-color 300ms ease;
+  }
+
+  .navLink:hover,
+  .navLink:focus {
+    background-color: var(--color-darkblue);
+    outline: none;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header {
-    padding: 2rem;
     width: 1280px;
   }
 
-  .menuButton {
-    padding: 0.8rem;
-  }
-
-  .menuIcon {
-    width: 45px;
+  .navLink {
+    font-size: 20px;
+    padding: 2rem;
   }
 }

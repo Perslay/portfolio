@@ -87,24 +87,28 @@ export const Navigation = ({
         <h2 className={css.heading} id="navDialogTitle">
           Navigation
         </h2>
-        <p id="navDialogDesc">Choose the page you would like to visit.</p>
-        <ul>
-          <li className={css.navItem}>
-            <Link to="/" className={css.navLink} onClick={toggleNav}>
-              Home
-            </Link>
-          </li>
-          <li className={css.navItem}>
-            <Link to="/about" className={css.navLink} onClick={toggleNav}>
-              About
-            </Link>
-          </li>
-          <li className={css.navItem}>
-            <Link to="/projects" className={css.navLink} onClick={toggleNav}>
-              Projects
-            </Link>
-          </li>
-        </ul>
+        <p id="navDialogDesc" className={css.description}>
+          Choose the page you would like to visit.
+        </p>
+        <nav>
+          <ul>
+            <li className={css.navItem}>
+              <Link to="/" className={css.navLink} onClick={toggleNav}>
+                Home
+              </Link>
+            </li>
+            <li className={css.navItem}>
+              <Link to="/about" className={css.navLink} onClick={toggleNav}>
+                About
+              </Link>
+            </li>
+            <li className={css.navItem}>
+              <Link to="/projects" className={css.navLink} onClick={toggleNav}>
+                Projects
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   );

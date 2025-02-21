@@ -212,7 +212,7 @@
 }
 
 .emphasis {
-  color: #d4b500;
+  color: var(--color-gold);
   font-weight: bold;
 }
 

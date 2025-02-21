@@ -2,7 +2,7 @@ import css from "./Footer.module.css";
 
 export const Footer = () => {
   return (
-    <div className={css.footerBackground}>
+    <footer className={css.footerBackground}>
       <div className={css.footer}>
         <h3 className={css.heading}>Contact</h3>
         <address className={css.address}>
@@ -63,6 +63,6 @@ export const Footer = () => {
           </div>
         </address>
       </div>
-    </div>
+    </footer>
   );
 };

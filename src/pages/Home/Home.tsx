@@ -2,7 +2,7 @@ import css from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={css.home}>
+    <main className={css.home}>
       <h1 className={css.firstHeading}>Natalia Fedyk</h1>
       <section className={css.section}>
         <img
@@ -41,7 +41,7 @@ const Home = () => {
           </a>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

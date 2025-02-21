@@ -2,7 +2,7 @@ import css from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <div className={css.projects}>
+    <main className={css.projects}>
       <h1 className={css.firstHeading}>Projects</h1>
       <section className={css.section}>
         <h2 className={css.secondHeading}>Group Projects</h2>
@@ -171,7 +171,7 @@ const Projects = () => {
           </li>
         </ul>
       </section>
-    </div>
+    </main>
   );
 };
 
