@@ -149,48 +149,56 @@ const About = () => {
           </li>
           <li className={css.educationItem}>
             <ul className={css.educationItemContent}>
-              <li className={css.schoolName}>
-                <a
-                  className={css.certificateLink}
-                  href="./certificate.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  IT School GoIT
-                  <svg className={css.linkIcon} height="15" width="15">
-                    <use href="/portfolio/images/icons.svg#icon-new-tab" />
-                  </svg>
-                  <span className={css.underline}></span>
-                </a>
+              <li className={css.educationDescription}>
+                <div className={css.schoolName}>
+                  <a
+                    className={css.certificateLink}
+                    href="./certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    IT School GoIT
+                    <svg className={css.linkIcon} height="15" width="15">
+                      <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                    </svg>
+                    <span className={css.underline}></span>
+                  </a>
+                </div>
+                <div className={css.schoolInfo}>FullStack Developer</div>
               </li>
-              <li className={css.schoolInfo}>FullStack Developer</li>
               <li className={css.schoolDate}>2023-2024</li>
             </ul>
           </li>
           <li className={css.educationItem}>
             <ul className={css.educationItemContent}>
-              <li className={css.schoolName}>
-                <a
-                  className={css.certificateLink}
-                  href="https://api.strefakursow.pl/api/v2/public/certificate/pdf/3oqtaqn7f7y8k0kc0c8oso8k4cg8ws/ENG"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Concept Art Course
-                  <svg className={css.linkIcon} height="15" width="15">
-                    <use href="/portfolio/images/icons.svg#icon-new-tab" />
-                  </svg>
-                  <span className={css.underline}></span>
-                </a>
+              <li className={css.educationDescription}>
+                <div className={css.schoolName}>
+                  <a
+                    className={css.certificateLink}
+                    href="https://api.strefakursow.pl/api/v2/public/certificate/pdf/3oqtaqn7f7y8k0kc0c8oso8k4cg8ws/ENG"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Concept Art Course
+                    <svg className={css.linkIcon} height="15" width="15">
+                      <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                    </svg>
+                    <span className={css.underline}></span>
+                  </a>
+                </div>
+                <div className={css.schoolInfo}>
+                  Drawing and character design
+                </div>
               </li>
-              <li className={css.schoolInfo}>Drawing and character design</li>
               <li className={css.schoolDate}>2022</li>
             </ul>
           </li>
           <li className={css.educationItem}>
             <ul className={css.educationItemContent}>
-              <li className={css.schoolName}>NOVA Education Center</li>
-              <li className={css.schoolInfo}>IT Technician</li>
+              <li className={css.educationDescription}>
+                <div className={css.schoolName}>NOVA Education Center</div>
+                <div className={css.schoolInfo}>IT Technician</div>
+              </li>
               <li className={css.schoolDate}>2018-2020</li>
             </ul>
           </li>
