@@ -167,59 +167,73 @@
 }
 
 .interestsItem {
-  height: 177px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   position: relative;
 }
 
-.interestsItem:first-child {
-  background-image: url("/portfolio/images/bird.jpg");
-  background-size: cover;
-}
-
-.interestsItem:nth-child(2) {
-  background-image: url("/portfolio/images/drawing.jpg");
-  background-size: cover;
-}
-
-.interestsItem:last-child {
-  background-image: url("/portfolio/images/gaming.jpg");
-  background-size: cover;
-}
-
-@media only screen and (min-resolution: 2dppx) {
-  .interestsItem:first-child {
-    background-image: url("/portfolio/images/bird@2x.jpg");
-  }
-
-  .interestsItem:nth-child(2) {
-    background-image: url("/portfolio/images/drawing@2x.jpg");
-  }
-
-  .interestsItem:last-child {
-    background-image: url("/portfolio/images/gaming@2x.jpg");
-  }
-}
-
-.bgLight {
-  background-color: var(--color-light);
-  height: 100%;
-}
-
-.interestBox {
+.interestText {
   justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   height: 100%;
-  left: 0;
-  padding: 0.5rem;
-  position: absolute;
-  top: 0;
 }
 
-.interestText {
+.interestDescription {
   font-size: 14px;
   letter-spacing: -0.03em;
+}
+
+.interestImage {
+  position: relative;
+  height: 177px;
+}
+
+.imageMain {
+  height: inherit;
+}
+
+.firstImage {
+  background-image: url("/portfolio/images/bird.jpg");
+  background-size: cover;
+}
+
+.secondImage {
+  background-image: url("/portfolio/images/drawing.jpg");
+  background-size: cover;
+}
+
+.thirdImage {
+  background-image: url("/portfolio/images/gaming.jpg");
+  background-size: cover;
+}
+
+@media only screen and (min-resolution: 2dppx) {
+  .firstImage {
+    background-image: url("/portfolio/images/bird@2x.jpg");
+  }
+
+  .secondImage {
+    background-image: url("/portfolio/images/drawing@2x.jpg");
+  }
+
+  .thirdImage {
+    background-image: url("/portfolio/images/gaming@2x.jpg");
+  }
+}
+
+.imageLight {
+  background: var(--color-transparent);
+  background: linear-gradient(
+    var(--color-white) 0,
+    var(--color-transparent) 50%
+  );
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -295,29 +309,32 @@
   }
 
   .interestsItem {
-    height: 213px;
-    width: 344px;
-    transform: translateX(376px);
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
   }
 
-  .bgLight {
+  .interestDescription {
+    font-size: 16px;
+  }
+
+  .interestImage {
+    height: 213px;
+    width: 344px;
+  }
+
+  .imageMain {
+    width: inherit;
+  }
+
+  .imageLight {
     background: var(--color-transparent);
     background: linear-gradient(
       90deg,
       var(--color-white) 0,
       var(--color-transparent) 50%
     );
-  }
-
-  .interestBox {
-    gap: 1rem;
-    left: -376px;
-    padding: 0;
-    width: 344px;
-  }
-
-  .interestText {
-    font-size: 16px;
+    height: inherit;
   }
 }
 
@@ -398,18 +415,34 @@
   }
 
   .interestsItem {
-    height: 241px;
-    width: 390px;
-    transform: translateX(826px);
-  }
-
-  .interestBox {
-    gap: 2rem;
-    left: -827px;
-    width: 779px;
+    gap: 3rem;
   }
 
   .interestText {
+    gap: 2rem;
+    width: 779px;
+  }
+
+  .interestDescription {
     font-size: 18px;
+  }
+
+  .interestImage {
+    height: 241px;
+    width: 389px;
+  }
+
+  .imageMain {
+    width: inherit;
+  }
+
+  .imageLight {
+    background: var(--color-transparent);
+    background: linear-gradient(
+      90deg,
+      var(--color-white) 0,
+      var(--color-transparent) 50%
+    );
+    height: inherit;
   }
 }

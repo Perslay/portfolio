@@ -208,38 +208,47 @@ const About = () => {
         <h2 className={css.secondHeading}>Interests</h2>
         <ul className={css.interestsList}>
           <li className={css.interestsItem}>
-            <div className={css.bgLight}></div>
-            <div className={css.interestBox}>
+            <div className={css.interestText}>
               <h3 className={css.thirdHeading}>Ornithology</h3>
-              <p className={css.interestText}>
+              <p className={css.interestDescription}>
                 The avian creatures come with different shapes, colors and
                 sounds. They inspire humans with their beauty and ability to
                 fly.
               </p>
             </div>
+            <div className={css.interestImage}>
+              <div className={`${css.imageMain} ${css.firstImage}`}></div>
+              <div className={css.imageLight}></div>
+            </div>
           </li>
           <li className={css.interestsItem}>
-            <div className={css.bgLight}></div>
-            <div className={css.interestBox}>
+            <div className={css.interestText}>
               <h3 className={css.thirdHeading}>Drawing</h3>
-              <p className={css.interestText}>
+              <p className={css.interestDescription}>
                 Art helps humans express themselves and process emotions.
               </p>
-              <p className={css.interestText}>
+              <p className={css.interestDescription}>
                 I chose drawing because I mainly think with images and it feels
                 most natural to me.
               </p>
             </div>
+            <div className={css.interestImage}>
+              <div className={`${css.imageMain} ${css.secondImage}`}></div>
+              <div className={css.imageLight}></div>
+            </div>
           </li>
           <li className={css.interestsItem}>
-            <div className={css.bgLight}></div>
-            <div className={css.interestBox}>
+            <div className={css.interestText}>
               <h3 className={css.thirdHeading}>Video games</h3>
-              <p className={css.interestText}>
+              <p className={css.interestDescription}>
                 Games are a wonderful way to have fun. Combined with the
                 artificial environment, they can provide unique and immersive
                 experience.
               </p>
+            </div>
+            <div className={css.interestImage}>
+              <div className={`${css.imageMain} ${css.thirdImage}`}></div>
+              <div className={css.imageLight}></div>
             </div>
           </li>
         </ul>
