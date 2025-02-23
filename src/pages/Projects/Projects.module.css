@@ -146,6 +146,12 @@
   width: 0;
 }
 
+.sourceCodeList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .websiteSource {
   align-items: center;
   display: inline-flex;
@@ -172,47 +178,54 @@
   width: 100%;
 }
 
-.sourceCodeList {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .funFactContainer {
   position: relative;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .funFactImg {
   background-image: url("/portfolio/images/snail.jpg");
   background-size: cover;
-  height: 100%;
-  position: absolute;
+  height: inherit;
   width: 100%;
-  z-index: -1;
 }
 
-.funFactBg {
+@media only screen and (min-resolution: 2dppx) {
+  .funFactImg {
+    background-image: url("/portfolio/images/snail@2x.jpg");
+  }
+}
+
+.funFactLight {
   background: var(--color-white);
   background: linear-gradient(
-    90deg,
-    var(--color-white) 60%,
+    95deg,
+    var(--color-white) 65%,
     var(--color-transparent) 100%
   );
-  height: 100%;
+  height: inherit;
   position: absolute;
-  width: 100%;
-  z-index: -1;
+  top: 0;
+  width: inherit;
 }
 
 .funFact {
   color: var(--color-gray);
   font-size: 14px;
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem 0;
   width: 75%;
 }
 
 .emphasis {
   font-weight: bold;
+  text-shadow: 1px 1px 0 var(--color-gold);
 }
 
 @media screen and (min-width: 768px) {
@@ -264,38 +277,106 @@
     gap: 1rem;
   }
 
-  /* .sourceCodeList {
+  .funFactContainer {
+    align-items: center;
+    display: flex;
     gap: 1rem;
-  } */
-
-  .funFactImg {
-    background-image: url("/portfolio/images/snail.jpg");
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-    transform: translateX(368px);
-    width: 352px;
-    z-index: -1;
   }
 
-  .funFactBg {
+  .imageContainer {
+    position: relative;
+    width: 352px;
+  }
+
+  .funFactImg {
+    height: 218px;
+    width: inherit;
+  }
+
+  .funFactLight {
     background: var(--color-white);
     background: linear-gradient(
       90deg,
-      var(--color-white) 0,
+      var(--color-white) 0%,
       var(--color-transparent) 50%
     );
-    height: 100%;
-    position: absolute;
-    transform: translateX(368px);
-    width: 352px;
-    z-index: -1;
   }
 
   .funFact {
     font-size: 16px;
-    line-height: 1.6;
     padding: 0;
-    width: 352px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects {
+    padding: 2rem;
+    width: 1280px;
+  }
+
+  .heading {
+    margin-bottom: 2rem;
+  }
+
+  .firstHeading {
+    font-size: 4em;
+  }
+
+  .section {
+    margin-bottom: 4rem;
+  }
+
+  .secondHeading {
+    font-size: 2.5em;
+  }
+
+  .groupProjectsText {
+    margin-bottom: 3rem;
+  }
+
+  .projectsList {
+    gap: 3rem;
+  }
+
+  .projectLink {
+    margin-bottom: 2rem;
+  }
+
+  .thirdHeading {
+    font-size: 2em;
+  }
+
+  .projectLink .linkIcon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .projectDetails {
+    font-size: 18px;
+    gap: 1.5rem;
+  }
+
+  .projectSource .linkIcon,
+  .sourceContainer .linkIcon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .sourceCodeList {
+    font-size: 18px;
+    gap: 1.5rem;
+  }
+
+  .funFactContainer {
+    gap: 1.5rem;
+  }
+
+  .imageContainer {
+    width: 397px;
+  }
+
+  .funFactImg {
+    height: 245px;
+    width: inherit;
   }
 }

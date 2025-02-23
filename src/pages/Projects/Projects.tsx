@@ -159,8 +159,6 @@ const Projects = () => {
           </li>
           <li>To see the rest of the projects, visit my Github profile.</li>
           <li className={css.funFactContainer}>
-            <div className={css.funFactImg}></div>
-            <div className={css.funFactBg}></div>
             <p className={css.funFact}>
               Did you know that this website is created using the{" "}
               <em className={css.emphasis}>golden ratio</em>? It is very common
@@ -168,6 +166,10 @@ const Projects = () => {
               aesthetically pleasing and can be found in many famous works of
               art.
             </p>
+            <div className={css.imageContainer}>
+              <div className={css.funFactImg}></div>
+              <div className={css.funFactLight}></div>
+            </div>
           </li>
         </ul>
       </section>
