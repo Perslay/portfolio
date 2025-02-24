@@ -26,7 +26,8 @@ const Home = () => {
         <div className={css.cvLinks}>
           <a
             className={css.cvLink}
-            href="./portfolio/natalia_fedyk_cv.pdf"
+            // href="./portfolio/natalia_fedyk_cv.pdf"
+            href={`${import.meta.env.BASE_URL}/my_cv.pdf`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +35,8 @@ const Home = () => {
           </a>
           <a
             className={css.cvLink}
-            href="./portfolio/natalia_fedyk_cv.pdf"
+            // href="./portfolio/natalia_fedyk_cv.pdf"
+            href={`${import.meta.env.BASE_URL}my_cv.pdf`}
             download
           >
             Download
