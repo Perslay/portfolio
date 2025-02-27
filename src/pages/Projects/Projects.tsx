@@ -20,7 +20,7 @@ const Projects = () => {
             >
               <h3 className={css.thirdHeading}>Simply Chocolate</h3>
               <svg className={css.linkIcon} height="20" width="20">
-                <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                <use href="/images/icons.svg#icon-new-tab" />
               </svg>
               <span className={css.underline}></span>
             </a>
@@ -38,7 +38,7 @@ const Projects = () => {
                   >
                     Frontend source code
                     <svg className={css.linkIcon} height="15" width="15">
-                      <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                      <use href="/images/icons.svg#icon-new-tab" />
                     </svg>
                     <span className={css.smallUnderline}></span>
                   </a>
@@ -55,7 +55,7 @@ const Projects = () => {
             >
               <h3 className={css.thirdHeading}>Filmoteka</h3>
               <svg className={css.linkIcon} height="20" width="20">
-                <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                <use href="/images/icons.svg#icon-new-tab" />
               </svg>
               <span className={css.underline}></span>
             </a>
@@ -73,7 +73,7 @@ const Projects = () => {
                   >
                     Frontend source code
                     <svg className={css.linkIcon} height="15" width="15">
-                      <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                      <use href="/images/icons.svg#icon-new-tab" />
                     </svg>
                     <span className={css.smallUnderline}></span>
                   </a>
@@ -90,7 +90,7 @@ const Projects = () => {
             >
               <h3 className={css.thirdHeading}>Kapusta</h3>
               <svg className={css.linkIcon} height="20" width="20">
-                <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                <use href="/images/icons.svg#icon-new-tab" />
               </svg>
               <span className={css.underline}></span>
             </a>
@@ -110,7 +110,7 @@ const Projects = () => {
                   >
                     Frontend source code
                     <svg className={css.linkIcon} height="15" width="15">
-                      <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                      <use href="/images/icons.svg#icon-new-tab" />
                     </svg>
                     <span className={css.smallUnderline}></span>
                   </a>
@@ -126,7 +126,7 @@ const Projects = () => {
                   >
                     Backend source code
                     <svg className={css.linkIcon} height="15" width="15">
-                      <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                      <use href="/images/icons.svg#icon-new-tab" />
                     </svg>
                     <span className={css.smallUnderline}></span>
                   </a>
@@ -150,7 +150,7 @@ const Projects = () => {
               >
                 here
                 <svg className={css.linkIcon} height="15" width="15">
-                  <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                  <use href="/images/icons.svg#icon-new-tab" />
                 </svg>
                 <span className={css.smallUnderline}></span>
               </a>

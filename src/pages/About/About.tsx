@@ -159,7 +159,7 @@ const About = () => {
                   >
                     IT School GoIT
                     <svg className={css.linkIcon} height="15" width="15">
-                      <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                      <use href="/images/icons.svg#icon-new-tab" />
                     </svg>
                     <span className={css.underline}></span>
                   </a>
@@ -181,7 +181,7 @@ const About = () => {
                   >
                     Concept Art Course
                     <svg className={css.linkIcon} height="15" width="15">
-                      <use href="/portfolio/images/icons.svg#icon-new-tab" />
+                      <use href="/images/icons.svg#icon-new-tab" />
                     </svg>
                     <span className={css.underline}></span>
                   </a>
