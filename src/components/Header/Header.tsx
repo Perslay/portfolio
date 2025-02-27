@@ -25,7 +25,7 @@ export const Header = ({
             id="open-dialog"
           >
             <svg className={css.menuIcon} width="40" height="40">
-              <use href="/portfolio/images/icons.svg#icon-menu" />
+              <use href="/images/icons.svg#icon-menu" />
             </svg>
           </button>
         ) : (

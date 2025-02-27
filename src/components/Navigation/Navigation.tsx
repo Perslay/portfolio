@@ -81,7 +81,7 @@ export const Navigation = ({
           onClick={toggleNav}
         >
           <svg className={css.closeIcon} width="30" height="30">
-            <use href="/portfolio/images/icons.svg#icon-close" />
+            <use href="/images/icons.svg#icon-close" />
           </svg>
         </button>
         <h2 className={css.heading} id="navDialogTitle">

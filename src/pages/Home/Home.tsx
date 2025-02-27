@@ -7,8 +7,8 @@ const Home = () => {
       <section className={css.section}>
         <img
           className={css.portrait}
-          src="/portfolio/images/avatar.jpg"
-          srcSet="/portfolio/images/avatar.jpg 1x, /portfolio/images/avatar@2x.jpg 2x"
+          src="/images/avatar.jpg"
+          srcSet="/images/avatar.jpg 1x, /images/avatar@2x.jpg 2x"
           alt="Young woman with fair skin and long mousy hair."
         />
         <h2 className={css.secondHeading}>Web Development Aspirant</h2>
@@ -26,7 +26,7 @@ const Home = () => {
         <div className={css.cvLinks}>
           <a
             className={css.cvLink}
-            // href="./portfolio/natalia_fedyk_cv.pdf"
+            // href="/natalia_fedyk_cv.pdf"
             href={`${import.meta.env.BASE_URL}natalia_fedyk_cv.pdf`}
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const Home = () => {
           </a>
           <a
             className={css.cvLink}
-            // href="./portfolio/natalia_fedyk_cv.pdf"
+            // href="/natalia_fedyk_cv.pdf"
             href={`${import.meta.env.BASE_URL}natalia_fedyk_cv.pdf`}
             download
           >

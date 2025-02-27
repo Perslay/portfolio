@@ -196,31 +196,31 @@
 }
 
 .firstImage {
-  background-image: url("/portfolio/images/bird.jpg");
+  background-image: url("/images/bird.jpg");
   background-size: cover;
 }
 
 .secondImage {
-  background-image: url("/portfolio/images/drawing.jpg");
+  background-image: url("/images/drawing.jpg");
   background-size: cover;
 }
 
 .thirdImage {
-  background-image: url("/portfolio/images/gaming.jpg");
+  background-image: url("/images/gaming.jpg");
   background-size: cover;
 }
 
 @media only screen and (min-resolution: 2dppx) {
   .firstImage {
-    background-image: url("/portfolio/images/bird@2x.jpg");
+    background-image: url("/images/bird@2x.jpg");
   }
 
   .secondImage {
-    background-image: url("/portfolio/images/drawing@2x.jpg");
+    background-image: url("/images/drawing@2x.jpg");
   }
 
   .thirdImage {
-    background-image: url("/portfolio/images/gaming@2x.jpg");
+    background-image: url("/images/gaming@2x.jpg");
   }
 }
 
