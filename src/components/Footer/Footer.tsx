@@ -42,6 +42,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label="Link to Natalia's Github profile"
               >
+                <span className={css.visuallyHidden}>Github</span>
                 <svg className={css.githubIcon} width="58" height="58">
                   <use href="/images/icons.svg#icon-github" />
                 </svg>
@@ -55,6 +56,7 @@ export const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label="Link to Natalia's Linkedin profile"
               >
+                <span className={css.visuallyHidden}>Linkedin</span>
                 <svg className={css.linkedinIcon} width="45" height="45">
                   <use href="/images/icons.svg#icon-linkedin2" />
                 </svg>
