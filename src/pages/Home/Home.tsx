@@ -33,7 +33,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            See my CV
+            <span className={css.cvLinkText}>View CV</span>
             <svg className={css.arrowIcon} width="45" height="45">
               <use href="/images/icons.svg#icon-arrow" />
             </svg>
