@@ -1,10 +1,20 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Portfolio created using React, Typescript and Vite.",
-  "type": "module",
+  "homepage": "https://github.com/Perslay/portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/Perslay/portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Perslay/portfolio.git"
+  },
+  "license": "ISC",
   "author": "",
+  "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
